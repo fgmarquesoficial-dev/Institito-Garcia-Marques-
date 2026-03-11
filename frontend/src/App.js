@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Toaster } from "./components/ui/sonner";
 import { Header } from "./components/Header";
@@ -16,6 +16,16 @@ import { WhatsAppFloat } from "./components/WhatsAppFloat";
 import { LeadCapturePopup } from "./components/LeadCapturePopup";
 
 function App() {
+  const [isLeadPopupOpen, setIsLeadPopupOpen] = useState(false);
+
+  const handleOpenLeadPopup = () => {
+    setIsLeadPopupOpen(true);
+  };
+
+  const handleCloseLeadPopup = () => {
+    setIsLeadPopupOpen(false);
+  };
+
   return (
     <div className="App">
       <Header />
@@ -25,14 +35,14 @@ function App() {
         <PhilosophySection />
         <ValuesSection />
         <ProgramsSection />
-        <ProtocolsSection />
+        <ProtocolsSection onOpenLeadPopup={handleOpenLeadPopup} />
         <CorporateSection />
         <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />
       <WhatsAppFloat />
-      <LeadCapturePopup />
+      <LeadCapturePopup isManualOpen={isLeadPopupOpen} onClose={handleCloseLeadPopup} />
       <Toaster />
     </div>
   );

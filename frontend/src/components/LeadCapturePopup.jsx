@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
-export const LeadCapturePopup = () => {
+export const LeadCapturePopup = ({ isManualOpen, onClose }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -19,7 +19,14 @@ export const LeadCapturePopup = () => {
   });
 
   useEffect(() => {
-    // Verifica se o popup já foi exibido nesta sessão
+    // Se foi aberto manualmente, mostra o popup
+    if (isManualOpen) {
+      setIsOpen(true);
+      setIsSuccess(false); // Reset success state
+      return;
+    }
+
+    // Verifica se o popup já foi exibido nesta sessão (comportamento automático)
     const popupShown = sessionStorage.getItem('leadPopupShown');
     const popupClosed = localStorage.getItem('leadPopupClosed');
     
@@ -32,10 +39,13 @@ export const LeadCapturePopup = () => {
 
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [isManualOpen]);
 
   const handleClose = () => {
     setIsOpen(false);
+    if (onClose) {
+      onClose();
+    }
     // Marca como fechado no localStorage (não reaparece por 24h)
     const tomorrow = new Date().getTime() + (24 * 60 * 60 * 1000);
     localStorage.setItem('leadPopupClosed', tomorrow.toString());

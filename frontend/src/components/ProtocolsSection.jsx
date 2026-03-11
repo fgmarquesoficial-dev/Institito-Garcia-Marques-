@@ -1,5 +1,5 @@
-import React from 'react';
-import { HelpCircle, Brain, Target, BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { HelpCircle, Brain, Target, BookOpen, ArrowRight, ExternalLink, Download } from 'lucide-react';
 import { Button } from './ui/button';
 import { instituteMockData } from '../data/mock';
 
@@ -10,9 +10,21 @@ const iconMap = {
   BookOpen
 };
 
-export const ProtocolsSection = () => {
+export const ProtocolsSection = ({ onOpenLeadPopup }) => {
+  const handleProtocolClick = (protocol) => {
+    // Se for o primeiro protocolo (8 Perguntas), abre o popup de lead capture
+    if (protocol.id === 1) {
+      if (onOpenLeadPopup) {
+        onOpenLeadPopup();
+      }
+    } else {
+      // Para os outros protocolos, abre o link externo
+      window.open(protocol.link, '_blank');
+    }
+  };
+
   return (
-    <section className="py-24 bg-gradient-to-br from-[#0a2342] via-[#0d2a4a] to-[#0a2342] text-white relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-[#0a2342] via-[#0d2a4a] to-[#0a2342] text-white relative overflow-hidden" id="protocols">
       {/* Background decorative elements */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-[#C9A961]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#C9A961]/10 rounded-full blur-3xl" />
@@ -75,17 +87,23 @@ export const ProtocolsSection = () => {
                   </p>
 
                   {/* Button */}
-                  <a
-                    href={protocol.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white transition-all duration-300 shadow-lg hover:shadow-xl">
+                  {protocol.id === 1 ? (
+                    <Button
+                      onClick={() => handleProtocolClick(protocol)}
+                      className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+                    >
+                      Baixar Gratuitamente
+                      <Download className="w-4 h-4 ml-2" />
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={() => handleProtocolClick(protocol)}
+                      className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+                    >
                       Acessar Protocolo
                       <ExternalLink className="w-4 h-4 ml-2" />
                     </Button>
-                  </a>
+                  )}
                 </div>
               </div>
             );

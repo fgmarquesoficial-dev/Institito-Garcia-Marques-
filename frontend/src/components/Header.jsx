@@ -27,6 +27,7 @@ export const Header = () => {
     { label: 'Início', id: 'hero' },
     { label: 'Sobre', id: 'about' },
     { label: 'Programas', id: 'programs' },
+    { label: 'Protocolos', id: 'protocols' },
     { label: 'Corporativo', id: 'corporate' },
     { label: 'Contato', id: 'contact' }
   ];
