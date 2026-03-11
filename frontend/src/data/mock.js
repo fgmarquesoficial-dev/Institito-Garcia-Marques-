@@ -128,7 +128,7 @@ export const instituteMockData = {
       name: "Quem Pensa Faz Acontecer",
       subtitle: "Programa de Mentoria de Alta Transformação",
       description: "Um programa revolucionário que transforma paradigmas mentais e desenvolve a capacidade de realizar projetos extraordinários através do poder do pensamento consciente.",
-      duration: "12 semanas",
+      duration: "12 a 24 semanas",
       format: "Individual ou Grupo",
       price: "R$ 4.999",
       priceNote: "Formato em grupo",
@@ -148,8 +148,8 @@ export const instituteMockData = {
       name: "Efeito Espelho",
       subtitle: "Programa de Mentoria de Autoimagem",
       description: "Transforme a forma como você se vê e como o mundo te percebe. Desenvolva uma autoimagem poderosa e autêntica que reflete seu verdadeiro potencial.",
-      duration: "8 semanas",
-      format: "Individual",
+      duration: "12 semanas",
+      format: "Individual ou Grupo",
       price: "Solicite Proposta",
       benefits: [
         "Reconstrução da autoimagem",
@@ -217,7 +217,7 @@ export const instituteMockData = {
       name: "Silene De Miranda",
       role: "Cliente do Instituto",
       content: "O que mais me impactou é como nossa consciência nos sabota. Muitas vezes queremos algo intensamente, mas o que não queremos acaba tendo maior impacto. Com a ajuda certa é possível resgatar-se das crenças limitantes que tiram a paz e a felicidade. Somos falhos, mas com as ferramentas certas, podemos tudo.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+      image: "https://customer-assets.emergentagent.com/job_academia-garcia/artifacts/ufxhjd1x_Silene.jpeg",
       rating: 5,
       date: "Há 29 semanas"
     },
@@ -225,7 +225,7 @@ export const instituteMockData = {
       name: "Jonathan Lima",
       role: "Cliente do Instituto",
       content: "Antes da mentoria, eu vivia estressado, com baixa energia, doente física e mentalmente. Mudando minha forma de pensar através da mentoria passei a fazer escolhas mais conscientes. Os resultados foram surpreendentes: minha inflamação crônica diminuiu drasticamente. Hoje posso dizer que não foi uma transformação só física, mas de vida.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      image: "https://customer-assets.emergentagent.com/job_academia-garcia/artifacts/daf7btks_Jonathan.jpeg",
       rating: 5,
       date: "Há 44 semanas"
     },
@@ -233,7 +233,7 @@ export const instituteMockData = {
       name: "Gisela Picler",
       role: "Cliente do Instituto",
       content: "Está sendo desafiador e muito evolutivo, não sou uma pessoa de acordar muito cedo, mas com a mentoria, acordo cedo, me sinto bem, e estou cada vez mais produtiva e não ocupada!!!!",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      image: "https://customer-assets.emergentagent.com/job_academia-garcia/artifacts/o5nirtx1_Gisela.png",
       rating: 5,
       date: "21 de nov. de 2023"
     }
