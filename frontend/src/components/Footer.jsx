@@ -90,6 +90,14 @@ export const Footer = () => {
               </li>
               <li>
                 <button
+                  onClick={() => scrollToSection('protocols')}
+                  className="text-gray-400 hover:text-[#C9A961] transition-colors"
+                >
+                  Protocolos
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => scrollToSection('corporate')}
                   className="text-gray-400 hover:text-[#C9A961] transition-colors"
                 >

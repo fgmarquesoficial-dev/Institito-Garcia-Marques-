@@ -5,7 +5,7 @@ export const instituteMockData = {
   contact: {
     phone: "+55 48 9176-1593",
     email: "contato@institutogarciamarques.com",
-    whatsapp: "5548917615930",
+    whatsapp: "554891761593",
     instagram: "https://www.instagram.com/institutogarciamarques/",
     linkedin: "#",
     youtube: "https://www.youtube.com/@InstitutoGarciaMarquesTV",
