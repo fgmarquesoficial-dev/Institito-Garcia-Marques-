@@ -1,0 +1,26 @@
+<svg width="450" height="120" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nested Triangles Logo -->
+  <g id="triangles-logo">
+    <!-- Outer circle background -->
+    <ellipse cx="60" cy="60" rx="55" ry="58" fill="#0a2342"/>
+    
+    <!-- Nested triangles (from largest to smallest) -->
+    <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linejoin="miter">
+      <polygon points="60,15 25,95 95,95"/>
+      <polygon points="60,23 30,87 90,87"/>
+      <polygon points="60,31 35,79 85,79"/>
+      <polygon points="60,39 40,71 80,71"/>
+      <polygon points="60,47 45,63 75,63"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <g id="logo-text">
+    <text x="130" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" letter-spacing="1">
+      INSTITUTO
+    </text>
+    <text x="130" y="85" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      GARCIA MARQUES
+    </text>
+  </g>
+</svg>
