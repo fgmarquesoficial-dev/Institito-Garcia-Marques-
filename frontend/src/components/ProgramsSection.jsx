@@ -60,9 +60,33 @@ export const ProgramsSection = () => {
                   <p className="text-lg text-[#C9A961] font-semibold mb-6">
                     {program.subtitle}
                   </p>
-                  <p className="text-gray-700 leading-relaxed mb-8">
+                  <p className="text-gray-700 leading-relaxed mb-6">
                     {program.description}
                   </p>
+
+                  {/* Extended Description for QPFA */}
+                  {program.extendedDescription && (
+                    <div className="space-y-4 mb-6">
+                      <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#C9A961]">
+                        <h4 className="font-bold text-gray-900 mb-2">Para Indivíduos:</h4>
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {program.extendedDescription.individual}
+                        </p>
+                      </div>
+                      <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#C9A961]">
+                        <h4 className="font-bold text-gray-900 mb-2">Para Famílias:</h4>
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {program.extendedDescription.family}
+                        </p>
+                      </div>
+                      <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#C9A961]">
+                        <h4 className="font-bold text-gray-900 mb-2">Para Organizações:</h4>
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {program.extendedDescription.organization}
+                        </p>
+                      </div>
+                    </div>
+                  )}
 
                   {/* Program Details */}
                   <div className="flex flex-wrap gap-4 mb-8">

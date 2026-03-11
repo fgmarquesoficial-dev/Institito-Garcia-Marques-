@@ -127,19 +127,27 @@ export const instituteMockData = {
       id: 1,
       name: "Quem Pensa Faz Acontecer",
       subtitle: "Programa de Mentoria de Alta Transformação",
-      description: "Um programa revolucionário que transforma paradigmas mentais e desenvolve a capacidade de realizar projetos extraordinários através do poder do pensamento consciente.",
+      description: "Este programa foi desenvolvido para provocar uma mudança profunda na forma como indivíduos, famílias e organizações definem, enxergam e alcançam resultados. A proposta é simples, porém poderosa: reconfigurar o sistema de pensamento para que os participantes deixem de operar no modo automático e passem a agir com intencionalidade, clareza e foco.",
+      extendedDescription: {
+        individual: "O programa auxilia na identificação de bloqueios mentais e padrões de comportamento que sabotam o progresso pessoal e profissional. Através de ferramentas práticas e reflexões profundas, o participante aprende a pensar com mais clareza, agir com mais consistência e gerar resultados mensuráveis em áreas como carreira, finanças, saúde e propósito.",
+        family: "A transformação pessoal de cada membro influencia positivamente o ambiente familiar. A proposta ajuda a alinhar valores, melhorar a comunicação e construir uma cultura familiar baseada em responsabilidade, colaboração e visão de longo prazo.",
+        organization: "O programa é um verdadeiro catalisador de performance coletiva. Ao aplicar os princípios nos líderes e equipes, cria-se um ambiente onde o pensamento estratégico, a alta performance e a execução disciplinada se tornam parte da cultura organizacional. Isso reduz desperdícios de energia, conflitos improdutivos e aumenta drasticamente o foco em metas claras e resultados sustentáveis."
+      },
       duration: "12 a 24 semanas",
       format: "Individual ou Grupo",
-      price: "R$ 4.999",
+      price: "R$ 5.999",
       priceNote: "Formato em grupo",
-      individualPrice: "Solicite Proposta",
+      individualPrice: "Sob proposta personalizada",
       benefits: [
-        "Reprogramação de paradigmas limitantes",
-        "Desenvolvimento de mentalidade de alta performance",
-        "Técnicas práticas de manifestação e realização",
-        "Acompanhamento personalizado",
-        "Material exclusivo e ferramentas"
+        "Reconfiguração do sistema de pensamento para sair do modo automático",
+        "Identificação e eliminação de bloqueios mentais e padrões sabotadores",
+        "Ferramentas práticas para pensar com clareza e agir com consistência",
+        "Desenvolvimento de intencionalidade, foco e disciplina na execução",
+        "Resultados mensuráveis em carreira, finanças, saúde e propósito",
+        "Alinhamento de valores e melhoria da comunicação (para famílias)",
+        "Catalisador de performance coletiva (para organizações)"
       ],
+      targetAudience: ["Indivíduos", "Famílias", "Organizações"],
       image: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885",
       featured: true
     },
@@ -150,7 +158,9 @@ export const instituteMockData = {
       description: "Transforme a forma como você se vê e como o mundo te percebe. Desenvolva uma autoimagem poderosa e autêntica que reflete seu verdadeiro potencial.",
       duration: "12 semanas",
       format: "Individual ou Grupo",
-      price: "Solicite Proposta",
+      price: "R$ 2.999",
+      priceNote: "Formato em grupo",
+      individualPrice: "Sob proposta personalizada",
       benefits: [
         "Reconstrução da autoimagem",
         "Eliminação de crenças limitantes",
