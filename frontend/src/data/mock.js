@@ -298,26 +298,26 @@ export const instituteMockData = {
       },
       {
         id: 2,
-        name: "Protocolo de Reorganização Mental",
-        description: "Ferramenta prática para identificar padrões mentais e reorganizar paradigmas que influenciam comportamento e resultados.",
-        icon: "Brain",
-        image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+        name: "Perdendo a Timidez: Guia Prático para Jovens e Adultos",
+        description: "Você sente que a timidez está travando sua vida, suas oportunidades e até seus relacionamentos? Este guia ensina você a desenvolver autoconfiança real, comunicar-se com segurança e assumir o protagonismo da própria vida através de técnicas comprovadas.",
+        icon: "Users",
+        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
         link: "https://go.hotmart.com/F104676340P"
       },
       {
         id: 3,
-        name: "Ferramentas de Clareza Estratégica",
-        description: "Material estruturado para auxiliar no desenvolvimento de pensamento estratégico e tomada de decisão consciente.",
-        icon: "Target",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+        name: "Protocolo de Ações Inspiradas™",
+        description: "A técnica noturna para dar instruções claras à sua mente. Aprenda a usar os minutos antes de dormir para programar seu subconsciente e acordar com ideias, soluções e direção real para sua vida.",
+        icon: "Moon",
+        image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
         link: "https://go.hotmart.com/N104781237J"
       },
       {
         id: 4,
-        name: "Protocolos de Desenvolvimento Pessoal",
-        description: "Instrumentos de autoestudo para aprofundar a consciência, reorganizar hábitos e fortalecer a capacidade de realização.",
-        icon: "BookOpen",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        name: "Alívio Imediato para Ansiedade - Guia Prático",
+        description: "Se a ansiedade toma conta da sua mente e do seu corpo, este guia oferece técnicas simples e comprovadas para acalmar a mente, relaxar o corpo, reduzir o estresse e recuperar o equilíbrio emocional em poucos minutos.",
+        icon: "Heart",
+        image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a",
         link: "https://go.hotmart.com/C104099229C"
       }
     ]

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { HelpCircle, Brain, Target, BookOpen, ArrowRight, ExternalLink, Download } from 'lucide-react';
+import { HelpCircle, Users, Moon, Heart, ArrowRight, ExternalLink, Download } from 'lucide-react';
 import { Button } from './ui/button';
 import { instituteMockData } from '../data/mock';
 
 const iconMap = {
   HelpCircle,
-  Brain,
-  Target,
-  BookOpen
+  Users,
+  Moon,
+  Heart
 };
 
 export const ProtocolsSection = ({ onOpenLeadPopup }) => {
