@@ -113,7 +113,7 @@ export const ProtocolsSection = ({ onOpenLeadPopup }) => {
         {/* CTA Button */}
         <div className="text-center">
           <a
-            href="https://go.hotmart.com/B104259524W"
+            href={`https://wa.me/${instituteMockData.contact.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
           >
