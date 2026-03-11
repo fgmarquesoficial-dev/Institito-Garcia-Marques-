@@ -7,6 +7,7 @@ import { AboutSection } from "./components/AboutSection";
 import { PhilosophySection } from "./components/PhilosophySection";
 import { ValuesSection } from "./components/ValuesSection";
 import { ProgramsSection } from "./components/ProgramsSection";
+import { ProtocolsSection } from "./components/ProtocolsSection";
 import { CorporateSection } from "./components/CorporateSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { ContactSection } from "./components/ContactSection";
@@ -24,6 +25,7 @@ function App() {
         <PhilosophySection />
         <ValuesSection />
         <ProgramsSection />
+        <ProtocolsSection />
         <CorporateSection />
         <TestimonialsSection />
         <ContactSection />

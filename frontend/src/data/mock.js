@@ -280,5 +280,46 @@ export const instituteMockData = {
     subtitle: "Agende uma consulta gratuita e descubra como podemos transformar sua vida pessoal e profissional.",
     buttonText: "Fale com um Especialista",
     image: "https://images.unsplash.com/photo-1631286434951-caa3dcab4d1b"
+  },
+
+  // Protocols Section
+  protocols: {
+    title: "Protocolos de Transformação",
+    subtitle: "Ferramentas estruturadas para expandir consciência, reorganizar paradigmas mentais e desenvolver clareza para construir resultados extraordinários.",
+    description: "Os protocolos do Instituto Garcia Marques são materiais de autoestudo desenvolvidos para provocar reflexão profunda e ajudar indivíduos a reorganizar sua forma de pensar, decidir e agir.",
+    items: [
+      {
+        id: 1,
+        name: "8 Perguntas que Merecem a Sua Atenção",
+        description: "Um protocolo de reflexão profunda para desenvolver clareza mental e consciência sobre decisões e direção de vida.",
+        icon: "HelpCircle",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
+        link: "https://go.hotmart.com/B104259524W"
+      },
+      {
+        id: 2,
+        name: "Protocolo de Reorganização Mental",
+        description: "Ferramenta prática para identificar padrões mentais e reorganizar paradigmas que influenciam comportamento e resultados.",
+        icon: "Brain",
+        image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+        link: "https://go.hotmart.com/F104676340P"
+      },
+      {
+        id: 3,
+        name: "Ferramentas de Clareza Estratégica",
+        description: "Material estruturado para auxiliar no desenvolvimento de pensamento estratégico e tomada de decisão consciente.",
+        icon: "Target",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+        link: "https://go.hotmart.com/N104781237J"
+      },
+      {
+        id: 4,
+        name: "Protocolos de Desenvolvimento Pessoal",
+        description: "Instrumentos de autoestudo para aprofundar a consciência, reorganizar hábitos e fortalecer a capacidade de realização.",
+        icon: "BookOpen",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        link: "https://go.hotmart.com/C104099229C"
+      }
+    ]
   }
 };
