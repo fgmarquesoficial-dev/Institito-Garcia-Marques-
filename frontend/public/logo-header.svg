@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120">
+  <!-- Triangle -->
+  <polygon 
+    points="210,20 180,70 240,70"
+    fill="none"
+    stroke="#1a1a1a"
+    stroke-width="4"
+    stroke-linejoin="round"/>
+
+  <!-- Title -->
+  <text 
+    x="210" 
+    y="105"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="22"
+    fill="#1a1a1a"
+    letter-spacing="2">
+    INSTITUTO GARCIA MARQUES
+  </text>
+</svg>

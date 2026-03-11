@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200">
+  <!-- Triangle -->
+  <polygon 
+    points="210,40 180,100 240,100"
+    fill="none"
+    stroke="#1a1a1a"
+    stroke-width="4"
+    stroke-linejoin="round"/>
+
+  <!-- Title -->
+  <text 
+    x="210" 
+    y="140"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="26"
+    fill="#1a1a1a"
+    letter-spacing="2">
+    INSTITUTO GARCIA MARQUES
+  </text>
+
+  <!-- Slogan -->
+  <text 
+    x="210" 
+    y="170"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="16"
+    fill="#1a1a1a"
+    letter-spacing="3">
+    SIM, VOCÊ PODE.
+  </text>
+</svg>

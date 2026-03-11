@@ -24,9 +24,9 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <img
-              src={instituteMockData.logo.main}
+              src="/logo-footer.svg"
               alt="Instituto Garcia Marques"
-              className="h-16 w-auto mb-6 brightness-0 invert"
+              className="h-20 w-auto mb-6"
             />
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               O primeiro instituto brasileiro 100% focado em desenvolvimento do potencial humano através da transformação consciente de paradigmas.
