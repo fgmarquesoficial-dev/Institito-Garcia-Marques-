@@ -106,16 +106,29 @@ export const ProgramsSection = () => {
                         </p>
                       )}
                     </div>
-                    <a
-                      href={`https://wa.me/${instituteMockData.contact.whatsapp}?text=Olá! Tenho interesse no programa ${program.name}.`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button className="bg-[#C9A961] hover:bg-[#B8935C] text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
-                        <Phone className="w-4 h-4 mr-2" />
-                        Fale com um Especialista
-                      </Button>
-                    </a>
+                    {program.externalLink ? (
+                      <a
+                        href={program.externalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button className="bg-[#C9A961] hover:bg-[#B8935C] text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
+                          <ArrowRight className="w-4 h-4 mr-2" />
+                          Acessar Agora
+                        </Button>
+                      </a>
+                    ) : (
+                      <a
+                        href={`https://wa.me/${instituteMockData.contact.whatsapp}?text=Olá! Tenho interesse no programa ${program.name}.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button className="bg-[#C9A961] hover:bg-[#B8935C] text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
+                          <Phone className="w-4 h-4 mr-2" />
+                          Fale com um Especialista
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

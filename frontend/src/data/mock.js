@@ -168,7 +168,8 @@ export const instituteMockData = {
       description: "Uma jornada mensal através dos melhores livros de desenvolvimento pessoal e profissional, com discussões guiadas e aplicação prática dos conceitos.",
       duration: "Mensal",
       format: "Grupo",
-      price: "Solicite Proposta",
+      price: "Acesse a Página",
+      externalLink: "https://transform-c.my.canva.site/o-caminho-da-excel-ncia",
       benefits: [
         "Acesso a conteúdos selecionados mensalmente",
         "Encontros ao vivo com discussões profundas",
