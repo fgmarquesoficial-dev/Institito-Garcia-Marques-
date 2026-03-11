@@ -12,6 +12,7 @@ import { TestimonialsSection } from "./components/TestimonialsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import { WhatsAppFloat } from "./components/WhatsAppFloat";
+import { LeadCapturePopup } from "./components/LeadCapturePopup";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <LeadCapturePopup />
       <Toaster />
     </div>
   );
