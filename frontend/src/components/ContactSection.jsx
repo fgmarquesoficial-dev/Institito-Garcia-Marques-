@@ -190,7 +190,7 @@ export const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Como podemos ajudá-lo?"
+                  placeholder="O que você realmente quer?"
                   rows={5}
                   className="w-full"
                 />
