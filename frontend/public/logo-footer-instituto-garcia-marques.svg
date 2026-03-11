@@ -1,0 +1,29 @@
+<svg width="450" height="180" viewBox="0 0 450 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nested Triangles Logo -->
+  <g id="triangles-logo">
+    <!-- Outer circle background -->
+    <ellipse cx="60" cy="90" rx="55" ry="58" fill="#0a2342"/>
+    
+    <!-- Nested triangles (from largest to smallest) -->
+    <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linejoin="miter">
+      <polygon points="60,45 25,125 95,125"/>
+      <polygon points="60,53 30,117 90,117"/>
+      <polygon points="60,61 35,109 85,109"/>
+      <polygon points="60,69 40,101 80,101"/>
+      <polygon points="60,77 45,93 75,93"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <g id="logo-text">
+    <text x="130" y="78" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" letter-spacing="1">
+      INSTITUTO
+    </text>
+    <text x="130" y="115" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      GARCIA MARQUES
+    </text>
+    <text x="130" y="150" font-family="Georgia, serif" font-size="18" font-weight="400" fill="#ffffff" letter-spacing="3">
+      SIM, VOCÊ PODE.
+    </text>
+  </g>
+</svg>

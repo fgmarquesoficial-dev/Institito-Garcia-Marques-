@@ -24,7 +24,7 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <img
-              src="/logo-garcia-marques-footer.svg"
+              src="/logo-footer-instituto-garcia-marques.svg"
               alt="Instituto Garcia Marques"
               height="120"
               className="h-30 w-auto mb-6"
