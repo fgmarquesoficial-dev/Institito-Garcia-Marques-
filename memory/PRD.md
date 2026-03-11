@@ -21,7 +21,7 @@ Criar um site institucional premium para o Instituto Garcia Marques, focado em d
 - Design responsivo
 
 ## What's Been Implemented (Dec 2025)
-### Frontend - Concluído
+### Frontend - Concluído ✅
 - ✅ Header fixo com logo real do instituto e navegação suave
 - ✅ Hero Section com overlay escuro para contraste, CTAs dourados, estatísticas
 - ✅ Seção Sobre com grid de diferenciais e imagens premium
@@ -32,11 +32,19 @@ Criar um site institucional premium para o Instituto Garcia Marques, focado em d
   - Efeito Espelho (Solicite Proposta)
   - Clube do Livro (Solicite Proposta)
 - ✅ Seção Corporativa com 4 soluções empresariais
-- ✅ Seção Depoimentos com 3 testemunhos
+- ✅ **Seção Depoimentos com avaliações REAIS do Google Reviews:**
+  - Silene De Miranda (5 estrelas - Há 29 semanas)
+  - Jonathan Lima (5 estrelas - Há 44 semanas)
+  - Gisela Picler (5 estrelas - 21/nov/2023)
+  - Link para "Ver todas as avaliações no Google"
 - ✅ Seção Contato com formulário e informações
 - ✅ Footer completo com links e redes sociais
-- ✅ Botão WhatsApp flutuante
-- ✅ Design premium com paleta institucional
+- ✅ **Redes Sociais integradas:**
+  - Instagram: @institutogarciamarques
+  - YouTube: @InstitutoGarciaMarquesTV
+  - LinkedIn
+- ✅ Botão WhatsApp flutuante (+55 48 9176-1593)
+- ✅ Design premium com paleta institucional (preto/branco/dourado #C9A961)
 - ✅ Imagens profissionais via Unsplash
 - ✅ Todos componentes usando Shadcn UI
 - ✅ Mock data estruturado em arquivo separado

@@ -8,6 +8,7 @@ export const instituteMockData = {
     whatsapp: "5548917615930",
     instagram: "https://www.instagram.com/institutogarciamarques/",
     linkedin: "#",
+    youtube: "https://www.youtube.com/@InstitutoGarciaMarquesTV",
   },
 
   // Logo
@@ -210,28 +211,31 @@ export const instituteMockData = {
     ]
   },
 
-  // Testimonials
+  // Testimonials - Real Google Reviews
   testimonials: [
     {
-      name: "Ana Paula Silva",
-      role: "Empreendedora",
-      content: "O programa Quem Pensa Faz Acontecer transformou completamente minha forma de pensar e agir. Em 3 meses, multipliquei os resultados do meu negócio.",
-      image: "https://images.unsplash.com/photo-1758876019673-704b039d405c",
-      rating: 5
+      name: "Silene De Miranda",
+      role: "Cliente do Instituto",
+      content: "O que mais me impactou é como nossa consciência nos sabota. Muitas vezes queremos algo intensamente, mas o que não queremos acaba tendo maior impacto. Com a ajuda certa é possível resgatar-se das crenças limitantes que tiram a paz e a felicidade. Somos falhos, mas com as ferramentas certas, podemos tudo.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+      rating: 5,
+      date: "Há 29 semanas"
     },
     {
-      name: "Roberto Mendes",
-      role: "Diretor de Operações",
-      content: "A mentoria do Instituto Garcia Marques foi fundamental para meu desenvolvimento como líder. Aprendi a liderar com propósito e autenticidade.",
-      image: "https://images.unsplash.com/photo-1761526135373-2e692c4eca6d",
-      rating: 5
+      name: "Jonathan Lima",
+      role: "Cliente do Instituto",
+      content: "Antes da mentoria, eu vivia estressado, com baixa energia, doente física e mentalmente. Mudando minha forma de pensar através da mentoria passei a fazer escolhas mais conscientes. Os resultados foram surpreendentes: minha inflamação crônica diminuiu drasticamente. Hoje posso dizer que não foi uma transformação só física, mas de vida.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      rating: 5,
+      date: "Há 44 semanas"
     },
     {
-      name: "Mariana Costa",
-      role: "Profissional Liberal",
-      content: "O Efeito Espelho me ajudou a reconstruir minha autoconfiança e projetar uma presença autêntica. Os resultados foram além das minhas expectativas.",
-      image: "https://images.unsplash.com/photo-1771315023421-363a9666efe4",
-      rating: 5
+      name: "Gisela Picler",
+      role: "Cliente do Instituto",
+      content: "Está sendo desafiador e muito evolutivo, não sou uma pessoa de acordar muito cedo, mas com a mentoria, acordo cedo, me sinto bem, e estou cada vez mais produtiva e não ocupada!!!!",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      rating: 5,
+      date: "21 de nov. de 2023"
     }
   ],
 

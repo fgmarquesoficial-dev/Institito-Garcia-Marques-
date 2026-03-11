@@ -9,13 +9,13 @@ export const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <span className="text-[#C9A961] text-sm font-semibold tracking-widest uppercase">
-            Depoimentos
+            Depoimentos Reais
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Vidas Transformadas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Histórias reais de pessoas que despertaram seu potencial ilimitado
+            Avaliações reais de nossos clientes no Google Reviews
           </p>
         </div>
 
@@ -52,10 +52,30 @@ export const TestimonialsSection = () => {
                   <div className="text-sm text-gray-600">
                     {testimonial.role}
                   </div>
+                  {testimonial.date && (
+                    <div className="text-xs text-gray-500 mt-1">
+                      {testimonial.date}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Google Reviews Link */}
+        <div className="text-center mt-12">
+          <a
+            href="https://www.google.com/search?q=Instituto+Garcia+Marques"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-gray-600 hover:text-[#C9A961] transition-colors font-medium"
+          >
+            Ver todas as avaliações no Google
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

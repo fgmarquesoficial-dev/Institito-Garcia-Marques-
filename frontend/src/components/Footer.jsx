@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Instagram, Linkedin, ArrowUp } from 'lucide-react';
+import { Phone, Mail, Instagram, Linkedin, Youtube, ArrowUp } from 'lucide-react';
 import { instituteMockData } from '../data/mock';
 
 export const Footer = () => {
@@ -39,6 +39,14 @@ export const Footer = () => {
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#C9A961] transition-all duration-300"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href={instituteMockData.contact.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#C9A961] transition-all duration-300"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
               <a
                 href={instituteMockData.contact.linkedin}
