@@ -1,28 +1,39 @@
-<svg width="450" height="180" viewBox="0 0 450 180" xmlns="http://www.w3.org/2000/svg">
-  <!-- Nested Triangles Logo -->
+<svg width="650" height="200" viewBox="0 0 650 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow effect definition -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Nested Triangles Logo with Glow -->
   <g id="triangles-logo">
-    <!-- Outer circle background -->
-    <ellipse cx="60" cy="90" rx="55" ry="58" fill="#0a2342"/>
+    <!-- Outer circle with blue glow -->
+    <circle cx="80" cy="100" r="70" fill="#0a2342" stroke="#4A9EFF" stroke-width="3" filter="url(#glow)"/>
     
-    <!-- Nested triangles (from largest to smallest) -->
+    <!-- Nested triangles (larger, well-spaced) -->
     <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linejoin="miter">
-      <polygon points="60,45 25,125 95,125"/>
-      <polygon points="60,53 30,117 90,117"/>
-      <polygon points="60,61 35,109 85,109"/>
-      <polygon points="60,69 40,101 80,101"/>
-      <polygon points="60,77 45,93 75,93"/>
+      <polygon points="80,35 30,155 130,155"/>
+      <polygon points="80,48 40,142 120,142"/>
+      <polygon points="80,61 50,129 110,129"/>
+      <polygon points="80,74 60,116 100,116"/>
+      <polygon points="80,87 70,103 90,103"/>
     </g>
   </g>
   
   <!-- Text -->
   <g id="logo-text">
-    <text x="130" y="78" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" letter-spacing="1">
+    <text x="180" y="75" font-family="Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff" letter-spacing="3">
       INSTITUTO
     </text>
-    <text x="130" y="115" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+    <text x="180" y="120" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#ffffff" letter-spacing="0.5">
       GARCIA MARQUES
     </text>
-    <text x="130" y="150" font-family="Georgia, serif" font-size="18" font-weight="400" fill="#ffffff" letter-spacing="3">
+    <text x="180" y="160" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#ffffff" letter-spacing="4">
       SIM, VOCÊ PODE.
     </text>
   </g>

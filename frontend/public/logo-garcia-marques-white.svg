@@ -1,25 +1,36 @@
-<svg width="450" height="120" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
-  <!-- Nested Triangles Logo -->
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow effect definition -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Nested Triangles Logo with Glow -->
   <g id="triangles-logo">
-    <!-- Outer circle background -->
-    <ellipse cx="60" cy="60" rx="55" ry="58" fill="#0a2342"/>
+    <!-- Outer circle with glow -->
+    <circle cx="60" cy="60" r="45" fill="#0a2342" stroke="#4A9EFF" stroke-width="2" filter="url(#glow)"/>
     
-    <!-- Nested triangles (from largest to smallest) -->
-    <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linejoin="miter">
-      <polygon points="60,15 25,95 95,95"/>
-      <polygon points="60,23 30,87 90,87"/>
-      <polygon points="60,31 35,79 85,79"/>
-      <polygon points="60,39 40,71 80,71"/>
-      <polygon points="60,47 45,63 75,63"/>
+    <!-- Nested triangles (larger spacing, centered) -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" stroke-linejoin="miter">
+      <polygon points="60,20 30,90 90,90"/>
+      <polygon points="60,28 35,82 85,82"/>
+      <polygon points="60,36 40,74 80,74"/>
+      <polygon points="60,44 45,66 75,66"/>
+      <polygon points="60,52 50,58 70,58"/>
     </g>
   </g>
   
   <!-- Text -->
   <g id="logo-text">
-    <text x="130" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" letter-spacing="1">
+    <text x="130" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#1a1a1a" letter-spacing="2">
       INSTITUTO
     </text>
-    <text x="130" y="85" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+    <text x="130" y="80" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#1a1a1a" letter-spacing="1">
       GARCIA MARQUES
     </text>
   </g>
