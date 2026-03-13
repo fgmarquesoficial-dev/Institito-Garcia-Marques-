@@ -43,7 +43,7 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('hero')}>
             <img
-              src="/logo-garcia-marques-white.svg"
+              src="/logo-header-sem-slogan.png"
               alt="Instituto Garcia Marques"
               height="56"
               className="h-14 w-auto"

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Fundo circular -->
+  <circle cx="256" cy="256" r="256" fill="#0a2a55"/>
+  
+  <!-- Triângulos concêntricos -->
+  <g stroke="#ffffff" stroke-width="10" fill="none">
+    <polygon points="256,80 432,400 80,400"/>
+    <polygon points="256,120 400,380 112,380"/>
+    <polygon points="256,160 368,360 144,360"/>
+    <polygon points="256,200 336,340 176,340"/>
+    <polygon points="256,240 304,320 208,320"/>
+  </g>
+</svg>
