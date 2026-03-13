@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
-import { Button } from './ui/button';
-import { instituteMockData } from '../data/mock';
+import { Menu, X } from 'lucide-react';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +21,7 @@ export const Header = () => {
     }
   };
 
-  const menuItems = [
+  const navItems = [
     { label: 'Início', id: 'hero' },
     { label: 'Sobre', id: 'about' },
     { label: 'Programas', id: 'programs' },
@@ -33,89 +31,86 @@ export const Header = () => {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <img
-              src="/logo-header-sem-slogan.png"
-              alt="Instituto Garcia Marques"
-              height="56"
-              className="h-14 w-auto"
-            />
-          </div>
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#020b2f]/95 backdrop-blur-xl">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-4">
+        {/* Logo */}
+        <button
+          onClick={() => scrollToSection('hero')}
+          className="group flex min-w-0 items-center gap-4"
+          aria-label="Instituto Garcia Marques"
+        >
+          <img
+            src="/logo-header-igm.png"
+            alt="Instituto Garcia Marques"
+            className="h-14 w-auto shrink-0 object-contain"
+          />
+        </button>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-7 lg:flex">
+          {navItems.map((item) => (
+            <button
+              key={item.label}
+              onClick={() => scrollToSection(item.id)}
+              className="text-sm font-medium text-white/85 transition hover:text-white"
+            >
+              {item.label}
+            </button>
+          ))}
+        </nav>
+
+        {/* Desktop CTA */}
+        <div className="hidden lg:block">
+          <a
+            href="https://wa.me/554891761593"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Agendar Consulta
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="inline-flex rounded-xl border border-white/10 bg-white/5 p-2 text-white lg:hidden"
+        >
+          {isMobileMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="border-t border-white/10 bg-[#031240] lg:hidden">
+          <nav className="mx-auto flex w-full max-w-7xl flex-col px-6 py-4">
+            {navItems.map((item) => (
               <button
-                key={item.id}
+                key={item.label}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-900 hover:text-[#C9A961] transition-colors duration-200 font-medium text-sm tracking-wide"
+                className="border-b border-white/5 py-3 text-left text-sm font-medium text-white/90 last:border-b-0"
               >
                 {item.label}
               </button>
             ))}
-          </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
             <a
-              href={`https://wa.me/${instituteMockData.contact.whatsapp}`}
+              href="https://wa.me/554891761593"
               target="_blank"
               rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white"
             >
-              <Button className="bg-[#C9A961] hover:bg-[#B8935C] text-white px-6 py-2 transition-all duration-300 shadow-lg hover:shadow-xl">
-                <Phone className="w-4 h-4 mr-2" />
-                Fale com um Especialista
-              </Button>
+              Agendar Consulta
             </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-gray-900 hover:text-[#C9A961] transition-colors"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          </nav>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 py-4 animate-in slide-in-from-top duration-300">
-            <nav className="flex flex-col space-y-4">
-              {menuItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-gray-900 hover:text-[#C9A961] transition-colors duration-200 font-medium text-left px-4"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <div className="px-4 pt-4">
-                <a
-                  href={`https://wa.me/${instituteMockData.contact.whatsapp}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <Button className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Fale com um Especialista
-                  </Button>
-                </a>
-              </div>
-            </nav>
-          </div>
-        )}
-      </div>
+      )}
     </header>
   );
 };
