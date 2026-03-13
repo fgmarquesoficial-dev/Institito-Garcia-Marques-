@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Instagram, Linkedin, Youtube, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Linkedin, Youtube, Facebook, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -106,6 +106,14 @@ export const ContactSection = () => {
                   className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-[#C9A961] transition-all duration-300"
                 >
                   <Instagram className="w-6 h-6 text-white" />
+                </a>
+                <a
+                  href={instituteMockData.contact.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-[#C9A961] transition-all duration-300"
+                >
+                  <Facebook className="w-6 h-6 text-white" />
                 </a>
                 <a
                   href={instituteMockData.contact.youtube}

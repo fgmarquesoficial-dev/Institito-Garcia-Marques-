@@ -7,8 +7,9 @@ export const instituteMockData = {
     email: "contato@institutogarciamarques.com",
     whatsapp: "554891761593",
     instagram: "https://www.instagram.com/institutogarciamarques/",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/company/instituto-garcia-marques/",
     youtube: "https://www.youtube.com/@InstitutoGarciaMarquesTV",
+    facebook: "https://www.facebook.com/profile.php?id=61578157887388",
   },
 
   // Logo
