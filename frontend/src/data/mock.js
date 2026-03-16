@@ -283,6 +283,24 @@ export const instituteMockData = {
     image: "https://images.unsplash.com/photo-1631286434951-caa3dcab4d1b"
   },
 
+  // Clients Section
+  clients: {
+    title: "Empresas e empresários que já confiaram em nosso trabalho",
+    subtitle: "Ao longo dos anos, empresários, polos universitários e equipes empresariais confiaram na orientação estratégica de Françueldo Garcia Marques para crescimento, organização e desenvolvimento de seus negócios.",
+    logos: [
+      { id: 1, name: "Faculdade São Luís" },
+      { id: 2, name: "Universidade Cruzeiro do Sul" },
+      { id: 3, name: "FASUL Educacional" },
+      { id: 4, name: "Forward Academy" },
+      { id: 5, name: "Mary Kay" },
+      { id: 6, name: "Eurocentro" },
+      { id: 7, name: "Infoprise" },
+      { id: 8, name: "Oskura" },
+      { id: 9, name: "PM Traduções" },
+      { id: 10, name: "Móveis Casa Verde" }
+    ]
+  },
+
   // Protocols Section
   protocols: {
     title: "Protocolos de Transformação",

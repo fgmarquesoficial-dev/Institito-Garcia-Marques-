@@ -4,6 +4,7 @@ import { Toaster } from "./components/ui/sonner";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
+import { ClientsSection } from "./components/ClientsSection";
 import { PhilosophySection } from "./components/PhilosophySection";
 import { ValuesSection } from "./components/ValuesSection";
 import { ProgramsSection } from "./components/ProgramsSection";
@@ -32,6 +33,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <ClientsSection />
         <PhilosophySection />
         <ValuesSection />
         <ProgramsSection />
