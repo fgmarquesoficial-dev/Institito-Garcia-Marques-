@@ -70,6 +70,10 @@ async def get_status_checks():
 from routes.leads import router as leads_router
 api_router.include_router(leads_router)
 
+# Import and include contacts router
+from routes.contacts import router as contacts_router
+api_router.include_router(contacts_router)
+
 # Include the router in the main app
 app.include_router(api_router)
 

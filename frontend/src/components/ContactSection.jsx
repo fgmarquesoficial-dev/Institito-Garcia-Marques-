@@ -13,6 +13,7 @@ export const ContactSection = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -21,19 +22,40 @@ export const ContactSection = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Mock form submission
-    toast.success('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success(data.message || 'Mensagem enviada com sucesso! Entraremos em contato em breve.');
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+      } else {
+        toast.error(data.detail || 'Erro ao enviar mensagem. Tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro ao enviar mensagem:', error);
+      toast.error('Erro ao enviar mensagem. Verifique sua conexão e tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -206,10 +228,20 @@ export const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-[#C9A961] hover:bg-[#B8935C] text-white py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Send className="w-5 h-5 mr-2" />
-                Enviar Mensagem
+                {isSubmitting ? (
+                  <>
+                    <span className="animate-spin mr-2">⏳</span>
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-5 h-5 mr-2" />
+                    Enviar Mensagem
+                  </>
+                )}
               </Button>
             </form>
           </div>
