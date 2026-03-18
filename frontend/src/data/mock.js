@@ -3,9 +3,9 @@
 export const instituteMockData = {
   // Contact Information
   contact: {
-    phone: "+55 48 9176-1593",
+    phone: "+55 48 99176-1593",
     email: "contato@institutogarciamarques.com",
-    whatsapp: "554891761593",
+    whatsapp: "5548991761593",
     instagram: "https://www.instagram.com/institutogarciamarques/",
     linkedin: "https://www.linkedin.com/company/instituto-garcia-marques/",
     youtube: "https://www.youtube.com/@InstitutoGarciaMarquesTV",
